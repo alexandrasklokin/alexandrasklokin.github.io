@@ -1,16 +1,105 @@
 <html>
 <head>
 
+	<link rel="stylesheet" href="style\style.css">
 	<title>Wikipedia's Survey</title>
 
 </head>
 <body>
 
-	<div class="nav-bar">
-		<p>Hello World!</p>
-
+	<!------------------------------HEADER---------------------------------->
+	<div class="header">
+		<h1>Wikipedia's UI Design Survey<br></h1>
 	</div>
 
+	<!------------------------------INSTRUCTIONS---------------------------------->
+	<div class ="about-website">
+		<h3>Survey Instructions:</h3>
+		<p>This <a href="https://en.wikipedia.org">website</a> is the subject of the following survey. <br>What do you think of the UI of this Wikipedia page? Please fill out all of the questions of the following survey, as truthfully as possible. Begin by finding an interesting article.</p><br>
+		
+		<a href="https://en.wikipedia.org"><img src="images\wikipedia.jpg"></a>
+		
+	</div>
+
+	<!------------------------------QUESTIONS---------------------------------->
+	<div class="questions">
+		<form class="questionaire">
+
+			<label>1) What is your overall opinion of this website's UI?</label><br>
+			<textarea></textarea><br><br>
+
+			<label>2) Were you able to open the article in your prefered language?</label><br>
+			<input type="radio" name="info">
+  			<label >Yes</label>
+  			<input type="radio" name="info">
+  			<label >No</label><br><br>
+
+			<label>3) How did you find the article?</label><br>
+			<select name="easy">
+				<option > </option>
+  				<option >External Search Engine</option>
+  				<option >Wikipedia search Bar</option>
+  				<option >Random Article</option>
+  				<option >Link from Another Wiki Article</option>
+  				<option >None of the above</option>
+  			</select><br><br>
+
+  			<label>4) Select all portions of the article which you found useful: </label><br>
+  			<input type="checkbox"><label >Article Header (right)</label><br>
+  			<input type="checkbox"><label >Navigation Menu (left)</label><br>
+  			<input type="checkbox"><label >Titles</label><br>
+			<input type="checkbox"><label >Text Links</label><br>
+  			<input type="checkbox"><label >Images</label><br>
+  			<input type="checkbox"><label >Image Captions</label><br>
+  			<input type="checkbox"><label >Summary</label><br>
+  			<input type="checkbox"><label >Sources</label><br>
+  			<input type="checkbox"><label >Further Reading</label><br>
+  			<input type="checkbox"><label >External Links</label><br><br><br>
+
+  			<label>5) How was your experience with the Wikipedia website? </label><br>
+  			<div class="linkrt">
+  				<table>
+  					<tr>
+  						<td>5 - Excelent</td>
+  						<td>4 - Good</td>
+  						<td>3 - OK</td>
+  						<td>2 - Bad</td>
+  						<td>1 - Horrible</td>
+  					</tr>
+  					<tr>
+  						<td><input type="radio" name="good"></td>
+  						<td><input type="radio" name="good"></td>
+  						<td><input type="radio" name="good"></td>
+  						<td><input type="radio" name="good"></td>
+  						<td><input type="radio" name="good"></td>
+  					</tr>
+  				</table>
+  			</div>
+
+
+		<form>
+	</div>
+	<!------------------------------COMMENTS---------------------------------->
+	<div class="questions">
+		<form class="comments">
+			<label>Additional comments:</label><br>
+			<textarea></textarea><br><br>
+		<form>
+	</div>
+
+	<!------------------------------SUBMIT---------------------------------->
+
+	<div class="submit">
+		<form>
+			<button>Submit</button>
+		<form>
+	</div>
+
+	<br><br><br>
+	<!------------------------------FOOTER---------------------------------->
+	<div class="footer">
+		<p>Website designed by: Alexandra Sklokin - 300010511</p>
+	</div>
 
 </body>
 </html>

@@ -1,3 +1,123 @@
-.nav-bar{
-	font-color: "blue";
+body{
+	background-color: #FFF8DC;
+	font-family: "Times New Roman", sans-serif;
+	scroll-behavior: smooth;
+
+}
+
+p,h3 {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	padding: 2px;
+}
+
+.tab{
+	width: 10px;
+}
+
+.header {
+	background-color: #FF7F50;
+	border-radius: 20px;
+	border-style: outset;
+	padding: 15px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: block;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}	
+
+.about-website{
+	background-color: white;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.questions{
+	background-color: white;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.submit{
+	background-color: white;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+textarea {
+  width: 75%;
+  height: 150px;
+  padding: 5px 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+select {
+  width: 75%;
+  padding: 16px 20px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  background-color: #f8f8f8;
+}
+
+button {
+	background-color: #FF7F50;
+	border-radius: 10px;
+	width: 100px;
+	padding: 8px;
+	color: white;
+
+}
+
+.linkrt{
+	margin: 5px;
+	border-radius: 10px;
+	padding: 8px;
+	width: 75%;
+}
+
+td{
+	border: 1px solid #A9A9A9;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #FF7F50;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
