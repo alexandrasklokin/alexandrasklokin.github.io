@@ -58,7 +58,38 @@ var products = [
 		glutenFree: false,
 		price: 3.99,
 		organic: false
+	},
+	{
+		name: "Tofu",
+		vegetarian: true,
+		glutenFree: false,
+		price: 5.99,
+		organic: true
 	}
+	,
+	{
+		name: "Hazels",
+		vegetarian: true,
+		glutenFree: true,
+		price: 5.99,
+		organic: true
+	},
+	{
+		name: "Chicken Breast",
+		vegetarian: false,
+		glutenFree: false,
+		price: 5.99,
+		organic: false
+	}
+	,
+	{
+		name: "Shrimp",
+		vegetarian: false,
+		glutenFree: true,
+		price: 5.99,
+		organic: true
+	}
+
 ];
 	
 
@@ -81,17 +112,23 @@ function restrictListProducts(prods, vege, glut, org) {
 				else if ((org == "None") && (prods[i].organic == false)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
+				else if ((org == "All")){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
 			}
-			else if ((glut == "None") && (prods[i].glutenFree == false)){
+			else if ((glut == "None")){
 				if ((org == "Organic") && (prods[i].organic == true)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
 				else if ((org == "None") && (prods[i].organic == false)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
+				else if ((org == "All")){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
 			}
 		}
-		else if ((vege == "None") && (prods[i].vegetarian == false)){
+		else if ((vege == "None")){
 			if ((glut == "GlutenFree") && (prods[i].glutenFree == true)){
 				if ((org == "Organic") && (prods[i].organic == true)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
@@ -99,12 +136,18 @@ function restrictListProducts(prods, vege, glut, org) {
 				else if ((org == "None") && (prods[i].organic == false)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
+				else if ((org == "All")){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
 			}
-			else if ((glut == "None") && (prods[i].glutenFree == false)){
+			else if ((glut == "None")){
 				if ((org == "Organic") && (prods[i].organic == true)){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
 				else if ((org == "None") && (prods[i].organic == false)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+				else if ((org == "All")){
 					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
 				}
 			}
