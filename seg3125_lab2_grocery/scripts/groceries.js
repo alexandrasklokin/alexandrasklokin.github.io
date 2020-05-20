@@ -4,22 +4,60 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Brocoli",
 		vegetarian: true,
 		glutenFree: true,
-		price: 1.99
+		price: 1.99,
+		organic: true
 	},
 	{
-		name: "bread",
+		name: "Bread",
 		vegetarian: true,
 		glutenFree: false,
-		price: 2.35
+		price: 2.35,
+		organic: false
 	},
 	{
-		name: "salmon",
+		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
-		price: 10.00
+		price: 10.00,
+		organic: false
+	},
+	{
+		name: "Chocolate Bar",
+		vegetarian: true,
+		glutenFree: true,
+		price: 2.45,
+		organic: true
+	},
+	{
+		name: "Beef Steak",
+		vegetarian: false,
+		glutenFree: false,
+		price: 17.00,
+		organic: true
+	},
+	{
+		name: "Coconut",
+		vegetarian: true,
+		glutenFree: true,
+		price: 8.55,
+		organic: false
+	},
+	{
+		name: "Pad Thai",
+		vegetarian: true,
+		glutenFree: false,
+		price: 18.45,
+		organic: false
+	},
+	{
+		name: "Pretzel",
+		vegetarian: true,
+		glutenFree: false,
+		price: 3.99,
+		organic: false
 	}
 ];
 	
@@ -28,17 +66,49 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction) {
+function restrictListProducts(prods, vege, glut, org) {
+	
 	let product_names = [];
+
+	prods.sort(function(a,b){return a.price-b.price});
+
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+		if ((vege == "Vegetarian") && (prods[i].vegetarian == true)){
+			if ((glut == "GlutenFree") && (prods[i].glutenFree == true)){
+				if ((org == "Organic") && (prods[i].organic == true)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+				else if ((org == "None") && (prods[i].organic == false)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+			}
+			else if ((glut == "None") && (prods[i].glutenFree == false)){
+				if ((org == "Organic") && (prods[i].organic == true)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+				else if ((org == "None") && (prods[i].organic == false)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+			}
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
-		}
-		else if (restriction == "None"){
-			product_names.push(prods[i].name);
+		else if ((vege == "None") && (prods[i].vegetarian == false)){
+			if ((glut == "GlutenFree") && (prods[i].glutenFree == true)){
+				if ((org == "Organic") && (prods[i].organic == true)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+				else if ((org == "None") && (prods[i].organic == false)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+			}
+			else if ((glut == "None") && (prods[i].glutenFree == false)){
+				if ((org == "Organic") && (prods[i].organic == true)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+				else if ((org == "None") && (prods[i].organic == false)){
+					product_names.push("$"+prods[i].price.toFixed(2)+" - "+prods[i].name);
+				}
+			}
+
 		}
 	}
 	return product_names;
@@ -48,7 +118,10 @@ function restrictListProducts(prods, restriction) {
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
 	for (let i=0; i<products.length; i+=1) {
-		if (chosenProducts.indexOf(products[i].name) > -1){
+
+		label = "$"+products[i].price.toFixed(2)+" - "+products[i].name;
+
+		if (chosenProducts.indexOf(label) > -1){
 			totalPrice += products[i].price;
 		}
 	}

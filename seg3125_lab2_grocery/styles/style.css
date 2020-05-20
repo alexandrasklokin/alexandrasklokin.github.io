@@ -1,5 +1,31 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
+body{
+  background-color: #cce6ff;
+  font-family: "Times New Roman";
+}
+
+h1,h3,h4{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-top: 0.5em;
+}
+
+h3{
+  color: #000099;
+}
+
+
+/* Style the header */
+.header {
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-image: url("blueberries.jpg");
+  background-color: #f1f1f1;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -34,4 +60,17 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  background-color: #f1f1f1;
+}
+
+.footer{
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
 }
