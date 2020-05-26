@@ -39,7 +39,7 @@ p.click{
   padding: 20px 12px;
   border: 1px solid #ccc;
   border-top: none;
-  background-color: #E6E6FA;
+  background-color: lavender;
 }
 
 .links {
@@ -60,7 +60,7 @@ a.git:link, a.git:visited{
 }
 
 a.git:hover, a:link, a:visited{
-	color:green;
+	color: green;
 }
 
 a:hover{
