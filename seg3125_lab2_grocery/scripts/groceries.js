@@ -8,86 +8,112 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99,
-		organic: true
+		organic: true,
+		classification: "Vegetable"
 	},
 	{
 		name: "Bread",
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35,
-		organic: false
+		organic: false,
+		classification: "Bread"
 	},
 	{
 		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00,
-		organic: false
+		organic: false,
+		classification: "Protein"
 	},
 	{
 		name: "Chocolate Bar",
 		vegetarian: true,
 		glutenFree: true,
 		price: 2.45,
-		organic: true
+		organic: true,
+		classification: "Desert"
 	},
 	{
 		name: "Beef Steak",
 		vegetarian: false,
 		glutenFree: false,
 		price: 17.00,
-		organic: true
+		organic: true,
+		classification: "Protein"
 	},
 	{
 		name: "Coconut",
 		vegetarian: true,
 		glutenFree: true,
 		price: 8.55,
-		organic: false
+		organic: false,
+		classification: "Nut"
 	},
 	{
 		name: "Pad Thai",
 		vegetarian: true,
 		glutenFree: false,
 		price: 18.45,
-		organic: false
+		organic: false,
+		classification: "Meal"
 	},
 	{
 		name: "Pretzel",
 		vegetarian: true,
 		glutenFree: false,
 		price: 3.99,
-		organic: false
+		organic: false,
+		classification: "Bread"
 	},
 	{
 		name: "Tofu",
 		vegetarian: true,
 		glutenFree: false,
 		price: 5.99,
-		organic: true
-	}
-	,
+		organic: true,
+		classification: "Protein"
+	},
 	{
-		name: "Hazels",
+		name: "Hazel Nuts",
 		vegetarian: true,
 		glutenFree: true,
 		price: 5.99,
-		organic: true
+		organic: true,
+		classification: "Nut"
 	},
 	{
 		name: "Chicken Breast",
 		vegetarian: false,
 		glutenFree: false,
 		price: 5.99,
-		organic: false
-	}
-	,
+		organic: false,
+		classification: "Protein"
+	},
 	{
 		name: "Shrimp",
 		vegetarian: false,
 		glutenFree: true,
 		price: 5.99,
-		organic: true
+		organic: true,
+		classification: "Protein"
+	},
+	{
+		name: "Milk 2%",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.99,
+		organic: true,
+		classification: "Dairy"
+	},
+	{
+		name: "Milk 1%",
+		vegetarian: true,
+		glutenFree: true,
+		price: 0.99,
+		organic: false,
+		classification: "Dairy"
 	}
 
 ];

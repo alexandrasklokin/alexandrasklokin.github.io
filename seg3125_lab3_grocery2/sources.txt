@@ -1,0 +1,23 @@
+Code for acordian style taken from: 
+https://www.w3schools.com/howto/howto_js_accordion.asp
+
+Images taken from:
+https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/blueberries-1296x728-feature.jpg?w=1155&h=1528
+https://i5.walmartimages.ca/images/Large/094/505/6000200094505.jpg
+https://lh3.googleusercontent.com/proxy/wtdYqdMclGqErTaMLJ7J5nPNXoG47mQeecGaFCv7J8xRLjvGQejDsDywbg128nZ6rOUCqm6PDCULNK1c2KEP6C5Kz9m6iB4
+https://images.squarespace-cdn.com/content/v1/54f8c792e4b03ea829c79558/1431634433036-BUYPHVTUJBVFQYQSZ6ZV/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmQPoRzxSr1hzN-vPBHt7YyLLXgctAyUJRqJUUGWVDK_ZzIgvsybGcZEPqUYiXY8im/OC+%283%29.jpg?format=300w
+https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTezWEZEc9uzxthzcObHoJ7W1ZLXTdjFOlH0hBl_0ufz_PLYSWI&usqp=CAU
+https://thumbs-prod.si-cdn.com/VcQw7J61LcN3OMNKzMCMpyWm0PA=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/ba/32/ba32d1a8-425d-4c79-bc9b-1bd79397ea1d/tofu.jpg
+https://cdn.shopify.com/s/files/1/2636/1928/products/upload-330028-00800447000515-00_480x.jpg?v=1579818619
+https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvxPjAz4ryCUPVf6KOG1rvYlFHcRNKGDHU2_uF3XBIkTrPgZ2D&usqp=CAU
+https://www.yoso.ca/wp-content/uploads/2016/06/Coconut.jpg
+https://i0.wp.com/www.sprinklesandseasalt.com/wp-content/uploads/2020/02/Combination-Pad-Thai-11-scaled.jpg?fit=1707%2C2560&ssl=1
+https://images.squarespace-cdn.com/content/v1/5ce2e46734cc4f000122f0fa/1559677980973-JVVSGQIC3Y46WDO0XAXY/ke17ZwdGBToddI8pDm48kNdF2yJHGPZnfTIjEzXELbV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmK-rtDVyS8lrwwDyo1SUQ5tP9morAenpIu34fpw6JiKa0h9vTfEqUh1h4ffeg4dz4/MPretzels_Solo-Hearth_crop.jpg?format=500w
+https://d27ucmmhxk51xv.cloudfront.net/media/english/illustration/hazelnuts.jpg?version=1.2.2
+https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ab6b6d39-5301-4586-96c4-fe93d0fd7657.jpg
+https://www.mayrand.ca/globalassets/mayrand/catalog-mayrand/produits-laitiers/34985_lait-2-pur-filtre_2l_lactancia.jpg
+https://www.eatbydate.com/wp-content/uploads/Shrimp.jpg
+https://www.lactaid.com/sites/lactaid_us/files/styles/jjbos_adaptive_images_generic-desktop/public/product-images/lactaid_milk_hg_lf_w_calcium_1_0.jpg
+
+Code for top navigation bar taken from:
+https://www.w3schools.com/howto/howto_js_topnav.asp

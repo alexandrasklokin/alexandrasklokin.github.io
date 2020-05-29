@@ -57,6 +57,7 @@ function populateListProductChoices(slct11, slct12, slct13, slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
+		
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
