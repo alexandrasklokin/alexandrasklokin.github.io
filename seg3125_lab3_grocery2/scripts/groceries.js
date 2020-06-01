@@ -108,7 +108,7 @@ var products = [
 		classification: "Protein"
 	},
 	{
-		name: "Milk 2%",
+		name: "Milk-2",
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99,
@@ -116,7 +116,7 @@ var products = [
 		classification: "Dairy"
 	},
 	{
-		name: "Milk 1%",
+		name: "Milk-1",
 		vegetarian: true,
 		glutenFree: true,
 		price: 0.99,
