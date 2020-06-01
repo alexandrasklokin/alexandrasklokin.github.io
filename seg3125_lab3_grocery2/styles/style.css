@@ -1,6 +1,9 @@
 body{
   background-color: #cce6ff;
   font-family: "Times New Roman";
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 p.name{
@@ -56,6 +59,11 @@ p.click{
 .topnav a.active {
   background-color: cornflowerblue;
   color: white;
+}
+
+.topnav a.first:hover{
+  background-color: darkgrey;
+  color:black;
 }
 
 .footer{
@@ -128,4 +136,19 @@ button.ok{
 
 button.ok:hover{
   background-color: darkgrey;
+}
+
+#Products, #Cart{
+  visibility: hidden;
+}
+
+p.total{
+  size: large;
+  background-color: cornflowerblue;
+  width: 50%;
+  height: 30px;
+  color: white;
+  padding: 7px;
+  border: 2px solid darkgrey;
+
 }

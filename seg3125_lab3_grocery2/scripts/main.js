@@ -3,6 +3,12 @@
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct11, slct12, slct13, pV, pB, pP, pD, pN, pM, pDa) {
+
+	var thisTab = document.getElementById("Client");
+	thisTab.setAttribute('style','visibility:hidden; display:none;');
+	var nextTab = document.getElementById("Products");
+	nextTab.setAttribute('style','visibility: visible;');
+
     var s11 = document.getElementById(slct11);
     var s12 = document.getElementById(slct12);
     var s13 = document.getElementById(slct13);
@@ -178,6 +184,12 @@ function populateListProductChoices(slct11, slct12, slct13, pV, pB, pP, pD, pN, 
 // We build a paragraph to contain the list of selected items, and the total price
 
 function selectedItems(){
+
+	var thisTab = document.getElementById("Products");
+	thisTab.setAttribute('style','visibility:hidden; display:none;');
+	var nextTab = document.getElementById("Cart");
+	nextTab.setAttribute('style','visibility: visible;');
+
 	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
@@ -200,7 +212,12 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price: $" + getTotalPrice(chosenProducts).toFixed(2)));
+	
+	var total = document.createElement("p");
+	total.appendChild(document.createTextNode("Total Price: $" + getTotalPrice(chosenProducts).toFixed(2) ));
+	total.setAttribute('class','total');
+	
+	c.appendChild(total);
 		
 }
 

@@ -37,7 +37,7 @@
 	<!------------------------------APPLYING PERSONALIZATION FILTERS---------------------------->
 	<div class="filters">
 	  <h3>Dietary Information</h3>
-	  <p>Welcome to The Blues Grocer. We are dedicated to your grocery shopping success! Below choose all of the preferences you would like to include. This will help us meet your needs, as well as provide a faster, and easier shopping experience for you.</p>
+	  <p>Welcome to The Blues Grocer. We are dedicated to your grocery shopping success! <br>Below choose all of the food preferences you would like to include. This will help us meet your needs, as well as provide a faster, and easier shopping experience for you.</p>
 
 		<select id="dietSelect" name="dietSelect">
 			<option value=""></option>
@@ -47,7 +47,7 @@
 
 		<select id="dietSelect2" name="dietSelect">
 			<option value=""></option>
-	    	<option value="GlutenFree">Gluten Intolerant</option>
+	    	<option value="GlutenFree">Gluten Free</option>
 	    	<option value="None">n/a</option>
 		</select>
 
@@ -63,10 +63,11 @@
 
 		<button class="ok" onclick="populateListProductChoices('dietSelect', 'dietSelect2','dietSelect3','pV','pB','pP','pD','pN','pM','pDa')">Click to Proceed ></button>
 
+		<br>
+
 	</div>
 </div>
 
-<br>
 
 <!------------------------------SELECTING GROCERIES---------------------------------->
 
@@ -74,7 +75,7 @@
 
 	<!------------------------------WIZARD BAR---------------------------------->
 	<div class="topnav">
-	  <a><b>Step 1: </b>Filter Results</a>
+	  <a class="first" onClick="window.location.reload();"><b>Step 1: </b>Filter Results</a>
 	  <a class="active"><b>Step 2: </b>Select Groceries ></a>
 	  <a><b>Step 3: </b>View Shopping Cart</a>
 	</div>
@@ -120,23 +121,22 @@
 	<div class="tabcontent">
 		<button class="ok" onclick="selectedItems()">Click to Proceed ></button>
 	</div>
-</div>
 
-<br>
+	<br>
+</div>
 
 <!------------------------------SHOPPING CART---------------------------------->
 
 <div id="Cart">
 	<!------------------------------WIZARD BAR---------------------------------->
 	<div class="topnav">
-	  <a><b>Step 1: </b>Filter Results</a>
+	  <a class="first" onClick="window.location.reload();"><b>Step 1: </b>Filter Results</a>
 	  <a><b>Step 2: </b>Select Groceries</a>
 	  <a class="active"><b>Step 3: </b>View Shopping Cart ></a>
 	</div>
 
 	<div class="tabcontent">
-	  <h3>Cart</h3>
-	  <p>Your current shopping cart:</p>
+	  <h3>Your Shopping Cart:</h3>
 	  <div id="displayCart"></div>
 	</div>
 </div>
