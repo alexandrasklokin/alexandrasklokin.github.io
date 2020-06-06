@@ -1,5 +1,5 @@
 Code for Bootstrap template taken from https://startbootstrap.com/themes/agency/
-Code for Boostrap dropdown taken from https://getbootstrap.com/docs/4.0/components/dropdowns/
+Code for Bootstrap dropdown taken from https://getbootstrap.com/docs/4.0/components/dropdowns/
 
 
 
