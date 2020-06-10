@@ -1,0 +1,22 @@
+Code for Bootstrap template taken from https://startbootstrap.com/themes/agency/
+Code for Bootstrap dropdown taken from https://getbootstrap.com/docs/4.0/components/dropdowns/
+
+
+
+Images taken from:
+https://cdn.fash.com/assets/images/content/fash-young-woman-with-long-dark-hair-and-highlights.jpg
+
+https://i.pinimg.com/originals/8b/62/55/8b62556a18733a80eec1fb53bbb8b28a.png
+
+https://i.pinimg.com/originals/57/36/e2/5736e2fcb7cafc1641f5e8fd16b0b760.jpg
+
+https://static.fustany.com/images/en/photo/large_fustany-beauty-hair-curly_hairstyles-zendaya-15.jpg
+
+https://www.headcurve.com/wp-content/uploads/2019/02/shutterstock_1017078106-min.jpg?ezimgfmt=ng:webp/ngcb8
+
+https://www.byrdie.com/thmb/xfC2RUnWUgv0ML2VkFCFkkpfMA8=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/cdn.cliqueinc.com__cache__posts__179108__from-1500-bc-to-2015-ad-the-extraordinary-history-of-hair-color-1588780-1449627509.700x0c-cc8cf65ee4e94895bc7a65ec81509a8f-acf7447e50574a77b8f57b307e6f0567.jpg
+
+https://hairstylecamp.com/wp-content/uploads/blue-hair-men-10.jpg
+
+https://cdn.newsapi.com.au/image/v1/b16f3034d3d966fe51c84c16fcdb6ba2
+
