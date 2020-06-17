@@ -42,11 +42,12 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About Us</h2>
+                    <h2 class="section-heading text-uppercase">About Us</h2><br>
                 </div>
                 <div class="row text-center">
+                    <br><br>
                        <div class="col-md-4">
-                        <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-map fa-stack-1x fa-inverse"></i></span>
+                        <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fa fa-map-marker fa-stack -1x fa-inverse"></i></span>
                         <h4 class="my-3">Location</h4>
                         <p class="text-muted">123 Smith Avenue, P5P 6T6, Ottawa, Ontario, Canada</p>
                     </div>
@@ -56,7 +57,7 @@
                         <p class="text-muted">(555)555-5555</p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-file fa-stack-1x fa-inverse"></i></span>
+                        <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span>
                         <h4 class="my-3">Email Adress</h4>
                         <p class="text-muted">hairmaster@email.com</p>
                     </div>
@@ -67,6 +68,7 @@
         <section class="page-section bg-dark" id="portfolio">
             <div class="container">
                 <div class="text-center">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fa fa-paint-brush fa-stack -1x fa-inverse"></i></span><br><br>
                      <h2 class="section-heading text-uppercase">Our Services</h2>
                     <h3 class="section-subheading text-muted">Quality hair styling and care for all hair types.</h3>
                 </div>
@@ -162,6 +164,7 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fa fa-user-circle fa-stack -1x fa-inverse"></i></span><br><br>
                     <h2 class="section-heading text-uppercase">Our Team</h2>
                     <h3 class="section-subheading text-muted">Highly trained and professional team of hair styling experts.</h3>
                 </div>
@@ -189,6 +192,29 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="" />
+                            <h4>Daniel Peters</h4>
+                            <p class="text-muted">Beard Stylist</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/5.jpg" alt="" />
+                            <h4>Mark Martinov</h4>
+                            <p class="text-muted">Hair Styling Assistant</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/6.jpg" alt="" />
+                            <h4>Larissa Smith</h4>
+                            <p class="text-muted">Hair Styling Assistant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our employees have built up a loyal clientele. They're dedicated to beauty- inside and out! They are ready to meet your needs and desires, while suggesting good hair practices. If you'd like a specific artist, please leave a message bellow, when booking your consultation.</p></div>
                 </div>
             </div>
@@ -197,6 +223,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
+                    <span class="fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fa fa-credit-card fa-stack -1x fa-inverse"></i></span><br><br>
                     <h2 class="section-heading text-uppercase">Appointment</h2>
                     <h3 class="section-subheading text-muted">Book a consultation today.</h3>
                 </div>
@@ -204,39 +231,59 @@
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder=" Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <input class="form-control" id="name" type="text" placeholder=" Name *" required="required" data-validation-required-message="Please enter your name."/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address." title="We will send a confirmation to this email." />
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder=" Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                            <div class="form-group ">
+                                <input class="form-control" id="phone" type="tel" placeholder=" Phone *" required="required" data-validation-required-message="Please enter your phone number." title="We will use this phone number as the main correspondence medium with you." />
                                 <p class="help-block text-danger"></p>
                             </div>
+                            <div class="form-group">
+                                <input class="form-control creditCard" id="creditCard" type="text" placeholder=" Credit Card Number *" required="required" data-validation-required-message="Please enter your credit card number." title="In the case of a cancelation, a $20.00 fee will be charged to this card." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                             <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Message *" title="Use this space to provide any additional details about the hair style you have and would like."></textarea>
+                            </div>
+
                         </div>
                         <div class="col-md-6">
+
                             <div class="form-group">
-                                <input class="form-control" id="date" type="date" required="required" data-validation-required-message="Please choose a date." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control dropdown-toggle" href="#" role="button" required="required" id="service" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-required-message="Please select a service." placeholder="Service *">
+                                <input class="form-control dropdown-toggle-service" href="#" role="button" required="required" id="service" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-required-message="Please select a service." placeholder="Service *" selected disabled>
                                 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li class="dropdown-item" value="1">Cut or Trim</li>
-                                    <li class="dropdown-item" value="2">Curl Styling</li>
-                                    <li class="dropdown-item" value="3">Straight Styling</li>
-                                    <li class="dropdown-item" value="4">Bleach-Dye Combo</li>
-                                    <li class="dropdown-item" value="5">Dye or Balayage</li>
-                                    <li class="dropdown-item" value="6">Beard Styling</li>
+                                <div class="dropdown-menu-service bg-light" aria-labelledby="dropdownMenuButton">
+                                    <li class="dropdown-item" value="1">1. Cut or Trim</li>
+                                    <li class="dropdown-item" value="2">2. Curl Styling</li>
+                                    <li class="dropdown-item" value="3">3. Straight Styling</li>
+                                    <li class="dropdown-item" value="4">4. Bleach-Dye Combo</li>
+                                    <li class="dropdown-item" value="5">5. Dye or Balayage</li>
+                                    <li class="dropdown-item" value="6">6. Beard Styling</li>
                                 </div>
                                 
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Message or comments *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                            <div class="form-group">
+                                <input class="form-control dropdown-toggle-employee" href="#" id="specialist" role="button" required="required" id="specialist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-validation-required-message="Please select a specialist." placeholder="Specialist *" selected disabled>
+                                
+                                <div class="dropdown-menu-employee bg-light" aria-labelledby="dropdownMenuButton">
+                                    <li id = class="dropdown-item" value="1">1. Kay Garland - <i>[Mon, Tues, Wed]</i></li>
+                                    <li class="dropdown-item" value="2">2. Larry Parker - <i>[Tues, Wed, Thurs]</i></li>
+                                    <li class="dropdown-item" value="3">3. Diana Pereson - <i>[Wed, Thurs, Fri]</i></li>
+                                    <li class="dropdown-item" value="4">4. Daniel Peters - <i>[Tues, Thurs]</i></li>
+                                    <li class="dropdown-item" value="5">5. Mark Martinov - <i>[Mon, Fri]</i></li>
+                                    <li class="dropdown-item" value="6">6. Larissa Smith - <i>[Wed]</i></li>
+                                </div>
+                                
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" id="date" type="date" required="required" data-validation-required-message="Please choose a date." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -252,10 +299,19 @@
                     <br>
                     <br>
                     <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Book Appointment</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" onclick="testCreditCard()" type="submit">Book Appointment</button>
                     </div>
                 </form>
             </div>

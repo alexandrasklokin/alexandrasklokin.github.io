@@ -1,5 +1,6 @@
 Code for Bootstrap template taken from https://startbootstrap.com/themes/agency/
 Code for Bootstrap dropdown taken from https://getbootstrap.com/docs/4.0/components/dropdowns/
+Code for calender no weekends taken from https://stackoverflow.com/questions/49863189/disable-weekends-on-html-5-input-type-date
 
 
 
@@ -20,3 +21,8 @@ https://hairstylecamp.com/wp-content/uploads/blue-hair-men-10.jpg
 
 https://cdn.newsapi.com.au/image/v1/b16f3034d3d966fe51c84c16fcdb6ba2
 
+https://www.ivyexec.com/career-advice/wp-content/uploads/2018/05/characteristics-define-higher-level-professionals.jpg
+
+https://image.freepik.com/free-photo/smiling-man-face-white-background_33839-3342.jpg
+
+https://www.toodlehub.com/wp-content/uploads/2017/10/lupita-nyongo-hairstyles.png
