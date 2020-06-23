@@ -62,7 +62,7 @@ module.exports = function(app){
     // the action.js code will POST, and what is sent in the POST
     // will be recuperated here, parsed and used to update the data files
     app.post('/niceSurvey', urlencodedParser, function(req, res){
-        console.log(req.body);
+        //console.log(req.body);
         var json = req.body;
         for (var key in json){
             //console.log(key + ": " + json[key]);
