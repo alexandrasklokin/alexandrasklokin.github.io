@@ -14,33 +14,160 @@
 
   <body>
 
-	<div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
-    <h1>Survey</h1>
+  <div class="container-md p-3 my-3 border bg-warning text-white" id="survey">
+    <h1>Wikipedia's UI Design Survey<br></h1>
+  </div>
+
+  <div class="container-md p-3 my-3 border bg-light text-black" id="survey">
+    <h3>Instructions: <br></h3>
+    <p>This <a href="https://en.wikipedia.org">website</a> is the subject of the following survey. <br>What do you think of the UI of this Wikipedia page? <br>Please fill out all of the questions of the following survey, as truthfully as possible. Begin by finding an interesting article.</p><br>
+
+    <a href="https://en.wikipedia.org"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Timeless_Skin_on_en.wikipedia.org.png/800px-Timeless_Skin_on_en.wikipedia.org.png"></a>
+  </div>
+
+	<div class="container-md p-3 my-3 border bg-light text-black" id="survey">
+
     <form>
-      <h2> What fruits(s) do you like? </h2>
-      I like:<br>
-      <input type="text" name="fruit" placeholder="fruit name..." required />
+      <div class="form-group">
+
+
+      <!-- QUESTION 1 ---------------------------------------------------------------------------------->
+      <div class="form-group">
+      <label for="q1">1) Why did you visit Wikipedia?</label><br>
+        <textarea class="form-control" id="q1" name="why" rows="3" required></textarea>
+      </div>
+
+      <!-- QUESTION 2 ---------------------------------------------------------------------------------->
+      <div class="form-group">
+        <label for="q2">2) Were you able to open the article in your preferred language?</label><br>
+          <div class="form-check form-check-inline" id="q2">
+            <input class="form-check-input" type="radio" name="language" id="exampleRadios1" value="Yes">
+            <label class="form-check-label" for="exampleRadios1">Yes</label>
+          </div>
+          <div class="form-check form-check-inline" id="q2">
+            <input class="form-check-input" type="radio" name="language" id="exampleRadios2" value="No">
+            <label class="form-check-label" for="exampleRadios2">No</label>
+          </div>
+      </div>
+
+      <!-- QUESTION 3 ---------------------------------------------------------------------------------->
+      <div class="form-group">
+      <label for="q3">3) How did you find the article?</label>
+        <select class="form-control" id="q3" name="found">
+          <option value="External Search Engine">External Search Engine</option>
+          <option value="Wikipedia Search Bar">Wikipedia Search Bar</option>
+          <option value="Random Article">Random Article</option>
+          <option value="Link from Another Wiki Article">Link from Another Wiki Article</option>
+          <option value="None of the Above">None of the Above</option>
+        </select>
+      </div>
+
+      <!-- QUESTION 4 ---------------------------------------------------------------------------------->
+      <div class="form-group">
+      <label for="q4">4) Select all portions of the article which you found useful:</label>
+        <div class="form-check" id="q4">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="useful" value="Article Header (right)">
+          <label class="form-check-label" for="inlineCheckbox1">Article Header (right)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="useful" value="Navigation Menu (left)">
+          <label class="form-check-label" for="inlineCheckbox2">Navigation Menu (left)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="useful" value="Titles">
+          <label class="form-check-label" for="inlineCheckbox3">Titles</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" name="useful" value="Text Links">
+          <label class="form-check-label" for="inlineCheckbox4">Text Links</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" name="useful" value="Images">
+          <label class="form-check-label" for="inlineCheckbox5">Images</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox6" name="useful" value="Image Captions">
+          <label class="form-check-label" for="inlineCheckbox6">Image Captions</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox7" name="useful" value="Summary">
+          <label class="form-check-label" for="inlineCheckbox7">Summary</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox8" name="useful" value="Sources">
+          <label class="form-check-label" for="inlineCheckbox8">Sources</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox9" name="useful" value="Further Reading">
+          <label class="form-check-label" for="inlineCheckbox9">Further Reading</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox10" name="useful" value="External Links">
+          <label class="form-check-label" for="inlineCheckbox10">External Links</label>
+        </div>
+      </div>
+
+      <!-- QUESTION 5 ---------------------------------------------------------------------------------->
+      <div class="form-group">
+      <label for="q5">5) How was your experience with the Wikipedia website?</label>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">5 - Excelent</th>
+                <th scope="col">4 - Good</th>
+                <th scope="col">3 - OK</th>
+                <th scope="col">2 - Bad</th>
+                <th scope="col">1 - Horrible</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <div class="form-check">
+                  <td>
+                    <div class="form-check form-check-inline" id="q2">
+                      <input class="form-check-input" type="radio" name="rating" id="exampleRadios1" value="5 - Excelent">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check form-check-inline" id="q2">
+                      <input class="form-check-input" type="radio" name="rating" id="exampleRadios2" value="4 - Good">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check form-check-inline" id="q2">
+                      <input class="form-check-input" type="radio" name="rating" id="exampleRadios2" value="3 - OK">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check form-check-inline" id="q2">
+                      <input class="form-check-input" type="radio" name="rating" id="exampleRadios2" value="2 - Bad">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check form-check-inline" id="q2">
+                      <input class="form-check-input" type="radio" name="rating" id="exampleRadios2" value="1 - Horrible">
+                    </div>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
       <br>
       <br>
-      <h2> What color(s) do you like? </h2>
-	    I like:<br>
-		  <input type="checkbox" name="color" value="Red"> Red<br>
-		  <input type="checkbox" name="color" value="Green"> Green<br>
-      <input type="checkbox" name="color" value="Blue"> Blue<br>
-      <br>
-      <h2>What is your favorite animal?</h2>
-      I like:<br>
-      <select name="animal">
-			  <option value="Cat" selected="selected">Cat</option>
-			  <option value="Dog">Dog</option>
-			  <option value="Turtle">Turtle</option>
-      </select>
-      <br>
-      <br>
+
+      <!-- QUESTION 6 ---------------------------------------------------------------------------------->
+      <label for="q6">6) What is your overall opinion of this website's UI?</label><br>
+        <textarea class="form-control" id="q6" name="overall" rows="3" required></textarea>
+      <br><br><br><br>
+
+      <!-- QUESTION SUBMIT BUTTON ---------------------------------------------------------------------------------->
       <button type="submit" class="btn btn-warning" id="bb">Submit</button>
-      <p id="thanks"></p>
-    </form>
+
     </div>
-	<script src="/assets/action.js"></script>
+  </form>
+
+
+  <script src="/assets/action.js"></script>
   </body>
 </html>
