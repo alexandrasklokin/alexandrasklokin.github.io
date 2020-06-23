@@ -1,5 +1,6 @@
 Code for Bootstrap forms taken from https://getbootstrap.com/docs/4.0/components/forms/
 Code for Bootstrap table taken from https://getbootstrap.com/docs/4.4/content/tables/
+Code for Bootstrap footer taken from https://mdbootstrap.com/docs/jquery/navigation/footer/
 Base code taken from https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module6-SurveyAnalysis
 
 Image of Wikipedia from https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Timeless_Skin_on_en.wikipedia.org.png/800px-Timeless_Skin_on_en.wikipedia.org.png
