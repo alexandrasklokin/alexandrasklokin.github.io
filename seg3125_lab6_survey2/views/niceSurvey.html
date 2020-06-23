@@ -14,18 +14,26 @@
 
   <body>
 
-  <div class="container-md p-3 my-3 border bg-warning text-white" id="survey">
-    <h1>Wikipedia's UI Design Survey<br></h1>
-  </div>
+    <footer class="page-header font-small bg-primary text-white">
+      <div class="footer-copyright text-center py-3">
+        <h1> Wikipedia's UI Design Survey </h1>
+      </div>
+    </footer>
 
   <div class="container-md p-3 my-3 border bg-light text-black" id="survey">
-    <h3>Instructions: <br></h3>
+    <div class="container-md p-3 my-3 border bg-warning text-white" id="survey">
+      <h3>Instructions:<br></h3>
+    </div>
     <p>This <a href="https://en.wikipedia.org">website</a> is the subject of the following survey. <br>What do you think of the UI of this Wikipedia page? <br>Please fill out all of the questions of the following survey, as truthfully as possible. Begin by finding an interesting article.</p><br>
 
     <a href="https://en.wikipedia.org"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Timeless_Skin_on_en.wikipedia.org.png/800px-Timeless_Skin_on_en.wikipedia.org.png"></a>
   </div>
 
 	<div class="container-md p-3 my-3 border bg-light text-black" id="survey">
+
+    <div class="container-md p-3 my-3 border bg-warning text-white" id="survey">
+      <h3>Survey:<br></h3>
+    </div>
 
     <form>
       <div class="form-group">
@@ -34,7 +42,7 @@
       <!-- QUESTION 1 ---------------------------------------------------------------------------------->
       <div class="form-group">
       <label for="q1">1) Why did you visit Wikipedia?</label><br>
-        <textarea class="form-control" id="q1" name="why" rows="3" required></textarea>
+        <input type=text class="form-control" id="q1" name="why" rows="3" required>
       </div>
 
       <!-- QUESTION 2 ---------------------------------------------------------------------------------->
@@ -153,20 +161,24 @@
           </table>
       </div>
 
-      <br>
-      <br>
-
       <!-- QUESTION 6 ---------------------------------------------------------------------------------->
       <label for="q6">6) What is your overall opinion of this website's UI?</label><br>
         <textarea class="form-control" id="q6" name="overall" rows="3" required></textarea>
-      <br><br><br><br>
+      <br><br>
 
       <!-- QUESTION SUBMIT BUTTON ---------------------------------------------------------------------------------->
-      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <button type="submit" class="btn btn-primary" id="bb">Submit</button>
 
     </div>
   </form>
 
+</div>
+
+<footer class="page-footer font-small bg-warning">
+  <div class="footer-copyright text-center py-3">
+    <p> <b> Website by: </b> Alexandra Sklokin - 300010511 </p>
+  </div>
+</footer>
 
   <script src="/assets/action.js"></script>
   </body>
