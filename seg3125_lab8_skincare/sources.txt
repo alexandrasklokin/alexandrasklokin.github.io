@@ -1,0 +1,6 @@
+Code for NavBar taken from https://react-bootstrap.github.io/components/navbar/
+Code for Jumbotron taken from https://react-bootstrap.github.io/components/jumbotron/
+
+Image Sources:
+https://favicon.io/emoji-favicons/
+https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtyq-0QDAPBy_qc-LaG2effzUyKB7MhfQX5A&usqp=CAU
