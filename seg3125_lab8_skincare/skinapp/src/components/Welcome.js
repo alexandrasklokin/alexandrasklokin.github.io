@@ -13,7 +13,7 @@ const Welcome = () => {
                 We know you cherrish your skin, and we do too! That is why we have high standards. If you are new here, go ahead and take our quiz to narrow your search. 
                 Otherwise, browse our range of recommended products, and build your perfect routine. Good luck!</p> 
                 <br/><br/>
-                <Button variant="success" href="/quiz" block>Take the Quiz</Button>
+                <Button variant="warning" href="/quiz" block>Take the Quiz</Button>
             </Jumbotron> 
         </Container>
     )

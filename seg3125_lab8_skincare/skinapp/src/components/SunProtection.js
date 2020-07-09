@@ -1,12 +1,13 @@
 import React,{Component} from 'react';
-import {Container,Jumbotron} from 'react-bootstrap'
+import {Container,Jumbotron,CardColumns} from 'react-bootstrap'
 import Sun from "../img/sun.jpg";
+import SunCards from "./Cards.js";
 
 class SunProtection extends Component {
     state = {
         sunProtection : [
             {
-                id:1, 
+                id:15, 
                 brand: 'The Ordinary.',
                 name: 'Mineral UV Filters SPF 30 with Antioxidants',
                 description: 'Broad spectrum SPF 30 mineral sunscreen with UVA/UVB protection.',
@@ -15,7 +16,7 @@ class SunProtection extends Component {
                 ingredients: ['minerals']
             },
             {
-                id:2,
+                id:16,
                 brand: 'Life Brand',
                 name: 'Sunscreen Face Lotion SPF 30',
                 description: 'Moisturizing chemical sunscreen, with broad spectrum UVA and UVB. Will not cause breakouts. Oily free',
@@ -35,9 +36,12 @@ class SunProtection extends Component {
                     dark spots, and disrupts the skin's moisture barrier. This is why it's important to wear sunscreen everyday, whether you stay inside, or go outside. There are 
                     mineral, and chemical sunscreens, decide which suits your face better. 
                     </p> 
-                </Jumbotron> 
+                </Jumbotron>
 
                 <Jumbotron>
+                    <CardColumns>
+                        <SunCards products={this.state.sunProtection} />
+                    </CardColumns> 
                     
                 </Jumbotron> 
 

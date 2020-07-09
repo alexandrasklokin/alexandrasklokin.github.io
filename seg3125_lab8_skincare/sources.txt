@@ -1,6 +1,23 @@
 Code for NavBar taken from https://react-bootstrap.github.io/components/navbar/
 Code for Jumbotron taken from https://react-bootstrap.github.io/components/jumbotron/
+Code for Card/CardColumn taken from https://react-bootstrap.github.io/components/cards/
 
 Image Sources:
 https://favicon.io/emoji-favicons/
 https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtyq-0QDAPBy_qc-LaG2effzUyKB7MhfQX5A&usqp=CAU
+
+https://well.ca/products/garnier-skinactive-micellar-water_151366.html
+https://well.ca/products/nivea-micellair-eye-make-up-remover_150826.html
+https://well.ca/products/cetaphil-oily-skin-cleanser_420.html
+https://well.ca/products/the-ordinary-squalane-cleanser_167680.html
+https://well.ca/products/the-ordinary-glycolic-acid-7-toning_164783.html
+https://well.ca/products/clean-clear-blackhead-clearing_2697.html
+https://well.ca/products/the-ordinary-buffet-serum-value-size_176287.html
+https://well.ca/products/cerave-salicylic-acid-cream-for_185974.html
+https://well.ca/products/the-ordinary-caffeine-solution-5_129157.html
+https://well.ca/products/the-ordinary-retinol-02-in_172770.html
+https://well.ca/products/the-ordinary-100-plant-derived_163255.html
+https://well.ca/products/cetaphil-moisturizing-lotion_68470.html
+https://well.ca/products/the-ordinary-natural-moisturizing_129161.html
+https://well.ca/products/the-ordinary-hyaluronic-acid-2-b5_176288.html
+https://theordinary.deciem.com/product/rdn-mineral-uv-filters-spf-30-with-antioxidants-50ml?redir=1

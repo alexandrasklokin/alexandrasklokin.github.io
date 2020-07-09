@@ -3,16 +3,13 @@ import {Navbar,Nav} from 'react-bootstrap';
 import Logo from "../img/favicon.jpg";
 
 class TopNavBar extends Component {
-    state = {
-      
-    }
     render() {
         return (
             <Navbar bg="info" variant="dark">
             <Navbar.Brand href="/welcome"><img src={Logo} alt="Logo"/>  SkinExpert</Navbar.Brand>
             <Nav className="mr-auto">
               <Nav.Link href="/cleanse">Cleanse</Nav.Link>
-              <Nav.Link href="/treatement">Treat</Nav.Link>
+              <Nav.Link href="/treatment">Treat</Nav.Link>
               <Nav.Link href="/moisturize">Moisturize</Nav.Link>
               <Nav.Link href="/sunprotection">Protect</Nav.Link>
             </Nav>

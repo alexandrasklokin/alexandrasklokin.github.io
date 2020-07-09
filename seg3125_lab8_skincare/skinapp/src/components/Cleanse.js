@@ -1,13 +1,14 @@
 import React,{Component} from 'react';
-import {Container,Jumbotron} from 'react-bootstrap'
+import {Container,Jumbotron,CardColumns} from 'react-bootstrap'
 import Sponge from "../img/sponge.jpg";
+import CleanserCards from "./Cards";
 
 class Cleanse extends Component {
     state = {
         cleansers : [
             {
                 id:1, 
-                brand: 'Garner SkinActive',
+                brand: 'Garnier SkinActive',
                 name: 'Miscellar Water',
                 description: 'Removes makeup + cleanswer + soothes, no rinsing',
                 skintype: ['dry','oily','combination','sensitive'],
@@ -36,7 +37,7 @@ class Cleanse extends Component {
                 id: 4,
                 brand: "The Ordinary.",
                 name: "Squalane Cleanser",
-                description: 'Squalane based face cleanswer and makeup remover.',
+                description: 'Squalane based face cleanser and makeup remover.',
                 skintype: ['dry','normal','sensitive'],
                 concerns: ['dryness'],
                 ingredients: ['squalane','glycerin']
@@ -57,7 +58,9 @@ class Cleanse extends Component {
                 </Jumbotron> 
 
                 <Jumbotron>
-                    
+                    <CardColumns>
+                        <CleanserCards products={this.state.cleansers} />
+                    </CardColumns>
                 </Jumbotron> 
 
             </Container>

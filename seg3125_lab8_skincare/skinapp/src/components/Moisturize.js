@@ -1,12 +1,13 @@
 import React,{Component} from 'react';
-import {Container,Jumbotron} from 'react-bootstrap'
+import {Container,Jumbotron, CardColumns} from 'react-bootstrap'
 import Water from "../img/water.jpg";
+import MoisturizeCards from "./Cards";
 
 class Moisturize extends Component {
     state = {
         moisturizers : [
             {
-                id:1, 
+                id:11, 
                 brand: 'The Ordinary.',
                 name: '100% Plant-Derived Hemi-Squalane',
                 description: 'Pure Hemi Squalane.',
@@ -15,7 +16,7 @@ class Moisturize extends Component {
                 ingredients: ['hemi-squalane']
             },
             {
-                id:2,
+                id:12,
                 brand: 'Cetaphil',
                 name: 'Moisturizing Lotion',
                 description: 'All skin types; 48 hour hydration; face and body.',
@@ -24,7 +25,7 @@ class Moisturize extends Component {
                 ingredients: ['glycerin','avocado oil']
             },
             {
-                id:3,
+                id:13,
                 brand: 'The Ordinary.',
                 name: 'Natural Moisturizing Factors + HA',
                 description: 'Surface hydration formula.',
@@ -33,7 +34,7 @@ class Moisturize extends Component {
                 ingredients: ['NMF','hyaluronic acid']
             },
             {
-                id: 4,
+                id: 14,
                 brand: "The Ordinary.",
                 name: "Hyaluronic Acid 2% + B5",
                 description: 'A hydration support formula with ultra-purse vegan hyaluronic acid.',
@@ -56,6 +57,9 @@ class Moisturize extends Component {
                 </Jumbotron> 
 
                 <Jumbotron>
+                <CardColumns>
+                        <MoisturizeCards products={this.state.moisturizers} />
+                    </CardColumns>
                     
                 </Jumbotron> 
 
