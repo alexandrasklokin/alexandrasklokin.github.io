@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="bottom"> 
         <br/><br/><br/><br/><br/>
-            <Navbar fixed="bottom" bg="light">
+            <Navbar sticky="bottom" bg="info" variant="dark">
                 <Navbar.Text><b>Website by: </b>Alexandra Sklokin 300010511</Navbar.Text>
             </Navbar>
         </div>

@@ -26,6 +26,7 @@ function App() {
           <TopNavBar/>
 
           <Switch>
+            <Route exact path='/' component={Welcome} />
             <Route exact path='/welcome' component={Welcome}/>
             <Route exact path='/cleanse' component={Cleanse}/>
             <Route exact path='/treatment' component={Treatement}/>

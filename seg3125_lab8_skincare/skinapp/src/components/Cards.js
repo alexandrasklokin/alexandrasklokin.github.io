@@ -55,15 +55,17 @@ const Cards = ({products}) => {
                     </Card.Header>
                     <Card.Body variant="pull-right px-2">
                         <Card.Text>
-                        <b>Description: </b> {product.description}<br/>
-                        <b>Skin Types: </b> {product.skintype.join(', ')}<br/>
-                        <b>Concerns: </b> {product.concerns.join(', ')}<br/>
-                        <b>Ingredients: </b> {product.ingredients.join(', ')}<br/>
+                            <b>Description: </b> {product.description}<br/>
+                        </Card.Text>
+                        <Card.Text>
+                            <b>Skin Types: </b> {product.skintype.join(', ')}<br/>
+                            <b>Concerns: </b> {product.concerns.join(', ')}<br/>
+                            <b>Ingredients: </b> {product.ingredients.join(', ')}<br/>
                         </Card.Text>
                     </Card.Body>
                         <Card.Footer>
-                        <Button variant="warning" name="day">+ Day Routine</Button>
-                        <Button variant="primary" name="night">- Night Routine</Button>
+                        <Button variant="warning" name="day" value={product.id}>+ Day Routine</Button>
+                        <Button variant="primary" name="night" value={product.id}>+ Night Routine</Button>
                     </Card.Footer>
                 </Card> 
             )
