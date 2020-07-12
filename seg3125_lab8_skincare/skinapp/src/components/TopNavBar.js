@@ -1,21 +1,32 @@
 import React,{Component} from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom'
 import Logo from "../img/favicon.jpg";
 
 class TopNavBar extends Component {
     render() {
         return (
-            <Navbar bg="info" variant="dark">
-            <Navbar.Brand href="/welcome"><img src={Logo} alt="Logo"/>  SkinExpert</Navbar.Brand>
+            <Navbar bg="info" variant="dark" key={Math.random}>
+            <div className="navbrand"><NavLink to='/welcome' className="link"><img src={Logo} alt="Logo"/>  SkinExpert</NavLink></div>
             <Nav className="mr-auto">
-              <Nav.Link href="/cleanse">Cleanse</Nav.Link>
-              <Nav.Link href="/treatment">Treat</Nav.Link>
-              <Nav.Link href="/moisturize">Moisturize</Nav.Link>
-              <Nav.Link href="/sunprotection">Protect</Nav.Link>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/cleanse' className="link">Cleanse</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/treatment' className="link">Treat</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/moisturize' className="link">Moisturize</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/sunprotection' className="link">Protect</NavLink></div>
+              <div className="navlink">||</div>
             </Nav>
+
             <Nav className="ml-auto">
-              <Nav.Link href="/quiz">Quiz</Nav.Link>
-              <Nav.Link href="/routine">My Routine</Nav.Link>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/routine' className="link">My Routine</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/quiz' className="link">Quiz</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='/results' className="link">Results</NavLink></div>
             </Nav>
           </Navbar>
           

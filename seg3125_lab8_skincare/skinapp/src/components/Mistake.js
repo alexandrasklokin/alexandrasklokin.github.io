@@ -4,7 +4,7 @@ import {Container,Jumbotron} from 'react-bootstrap'
 class Mistake extends Component {
     render() {
         return (
-            <div className="mistaken">
+            <div className="mistaken" key={Math.random}>
                 <Container>
                 <br/><br/>
                     <Jumbotron>

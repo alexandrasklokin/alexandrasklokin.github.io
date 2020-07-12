@@ -7,7 +7,8 @@ class SunProtection extends Component {
     state = {
         sunProtection : [
             {
-                id:15, 
+                id:15,
+                type: 4,  
                 brand: 'The Ordinary.',
                 name: 'Mineral UV Filters SPF 30 with Antioxidants',
                 description: 'Broad spectrum SPF 30 mineral sunscreen with UVA/UVB protection.',
@@ -17,18 +18,19 @@ class SunProtection extends Component {
             },
             {
                 id:16,
+                type: 4, 
                 brand: 'Life Brand',
                 name: 'Sunscreen Face Lotion SPF 30',
                 description: 'Moisturizing chemical sunscreen, with broad spectrum UVA and UVB. Will not cause breakouts. Oily free',
                 skintype: ['dry','oily','combination'],
                 concerns: ['sun'],
-                ingredients: []
+                ingredients: ['']
             }
         ]
     }
     render() {
         return (
-            <Container>
+            <Container key={Math.random}>
             <br/><br/>
                 <Jumbotron>
                     <h1><img src={Sun} alt="Logo"/> Sun Protection</h1>

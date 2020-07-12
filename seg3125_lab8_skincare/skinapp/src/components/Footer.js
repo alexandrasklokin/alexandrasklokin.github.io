@@ -5,7 +5,7 @@ import {Navbar} from 'react-bootstrap';
 const Footer = () => {
 
     return (
-        <div className="bottom"> 
+        <div className="bottom" key={Math.random}> 
         <br/><br/><br/><br/><br/>
             <Navbar sticky="bottom" bg="info" variant="dark">
                 <Navbar.Text><b>Website by: </b>Alexandra Sklokin 300010511</Navbar.Text>

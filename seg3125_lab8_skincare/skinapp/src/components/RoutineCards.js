@@ -40,23 +40,15 @@ function getImage (id) {
       }
 }
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
 
+const Cards = ({products,time}) => {
 
-const Cards = ({products}) => {
+    const handleClick = (product) => {
+        console.log(product);
+        //setCookie('nightProduct'+product.id,JSON.stringify(product),1);
 
-    const handleNightClick = (product) => {
-        //console.log(product);
-        setCookie('nightProduct'+product.id,JSON.stringify(product),1);
-    };
-    const handleDayClick = (product) => {
-        //console.log(product);
-        setCookie('dayProduct'+product.id,JSON.stringify(product),1);
+        document.cookie = time+"Product"+product.id+"= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+        window.location.reload(false);
     };
 
     const productsCards = products.length ? (
@@ -80,14 +72,13 @@ const Cards = ({products}) => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <Button variant="warning" onClick={() => {handleDayClick(product)}}>Day Routine</Button><p></p>
-                        <Button variant="info" onClick={() => {handleNightClick(product)}}>Night Routine</Button>
+                        <Button variant="danger" onClick={() => {handleClick(product)}}>Remove</Button>
                     </Card.Footer>
                 </Card> 
             )
         })
     ) : (
-        <p className="center">No products available.</p>
+        <p className="center">No products have been selected.</p>
     );
 
     return (

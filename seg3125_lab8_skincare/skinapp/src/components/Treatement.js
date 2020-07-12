@@ -8,8 +8,9 @@ class Treatement extends Component {
         treatements : [
             {
                 id:5, 
+                type: 2, 
                 brand: 'The Ordinary.',
-                name: 'Glycolic Acid 7% Toning Solution',
+                name: 'Glycolic Acid Toning Solution',
                 description: 'pH -3.6. Use idealy in the PM, no more frequently than one per day.',
                 skintype: ['oily','combination'],
                 concerns: ['pores','oil','blackheads','acne'],
@@ -17,6 +18,7 @@ class Treatement extends Component {
             },
             {
                 id:6,
+                type: 2, 
                 brand: 'Clean&Clear',
                 name: 'Blackhead Clearing Astringent',
                 description: 'Helps treat and prevent blackheads.',
@@ -26,6 +28,7 @@ class Treatement extends Component {
             },
             {
                 id:7,
+                type: 2, 
                 brand: 'The Ordinary.',
                 name: 'Buffet Serum',
                 description: 'Multi Technology Peptide Serum',
@@ -35,36 +38,39 @@ class Treatement extends Component {
             },
             {
                 id: 8,
+                type: 2, 
                 brand: "CeraVe",
                 name: "Renewing SA Cream",
                 description: 'Helps to prevent and reduce the recurrence of dry, itchy, red, and flaking skin.',
                 skintype: ['dry','normal','sensitive','oily'],
-                concerns: ['dryness','acne','redness','dark circles'],
-                ingredients: ['salicylic acid','niacinamide','ceramides','ammonium lactate','vitamin D']
+                concerns: ['dryness','acne','redness','dark_circles'],
+                ingredients: ['salicylic acid','niacinamide','ceramides','vitamin D']
             },
             {
                 id: 9,
+                type: 2, 
                 brand: "The Ordinary.",
-                name: "Caffeine Solution 5% + EGCG",
+                name: "Caffeine Solution + EGCG",
                 description: 'Reduces appearance of eye contour pigmentation and of puffiness',
                 skintype: ['dry','normal','sensitive','oily'],
-                concerns: ['dark circles'],
-                ingredients: ['caffeine','ECGC']
+                concerns: ['dark_circles'],
+                ingredients: ['caffeine','EGCG']
             },
             {
                 id: 10,
+                type: 2, 
                 brand: "The Ordinary.",
-                name: "Retinol 0.2% in Squalane",
-                description: 'Highly-stable, water fraa, solution of 0.2% pure retinol.',
+                name: "Retinol in Squalane",
+                description: 'Highly-stable, water fraa, solution of pure retinol.',
                 skintype: ['dry','normal','oily'],
-                concerns: ['hyperpigmentation','dark circles', 'redness','wrinkles','ageing','fine lines'],
+                concerns: ['hyperpigmentation','dark_circles', 'redness','wrinkles','ageing','fine_lines'],
                 ingredients: ['retinol','squalane']
             }
         ]
     }
     render() {
         return (
-            <Container>
+            <Container key={Math.random}>
             <br/><br/>
                 <Jumbotron>
                     <h1><img src={Sparkle} alt="Logo"/> Treatment</h1>

@@ -7,9 +7,10 @@ class Moisturize extends Component {
     state = {
         moisturizers : [
             {
-                id:11, 
+                id:11,
+                type: 3, 
                 brand: 'The Ordinary.',
-                name: '100% Plant-Derived Hemi-Squalane',
+                name: 'Plant-Derived Hemi-Squalane',
                 description: 'Pure Hemi Squalane.',
                 skintype: ['dry','sensitive'],
                 concerns: ['dryness'],
@@ -17,15 +18,17 @@ class Moisturize extends Component {
             },
             {
                 id:12,
+                type: 3, 
                 brand: 'Cetaphil',
                 name: 'Moisturizing Lotion',
-                description: 'All skin types; 48 hour hydration; face and body.',
+                description: 'All skin types, 48 hour hydration, face and body.',
                 skintype: ['dry','oily','combination','sensitive'],
                 concerns: ['dryness'],
                 ingredients: ['glycerin','avocado oil']
             },
             {
                 id:13,
+                type: 3, 
                 brand: 'The Ordinary.',
                 name: 'Natural Moisturizing Factors + HA',
                 description: 'Surface hydration formula.',
@@ -35,8 +38,9 @@ class Moisturize extends Component {
             },
             {
                 id: 14,
+                type: 3, 
                 brand: "The Ordinary.",
-                name: "Hyaluronic Acid 2% + B5",
+                name: "Hyaluronic Acid + B5",
                 description: 'A hydration support formula with ultra-purse vegan hyaluronic acid.',
                 skintype: ['dry','normal','sensitive','oily'],
                 concerns: ['dryness'],
@@ -46,12 +50,12 @@ class Moisturize extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container key={Math.random}>
             <br/><br/>
                 <Jumbotron>
                     <h1><img src={Water} alt="Logo"/> Moisturize</h1>
                     <p>Our skin's natural moisture barrier is SO important. It is what keeps the good stuff in, and the bad stuff out. 
-                    Making sure to never overly strip the skin, and the moisturize after harsher treatements, will keep this barrier strong and fighting. 
+                    Making sure to never overly strip the skin, and to moisturize after harsher treatments, will keep this barrier strong and fighting. 
                     Moisturizing doesn't have to be oily and heavy. Whether you have dry, normal, or oily skin, anyone can find their perfect moisturizer.
                     </p> 
                 </Jumbotron> 

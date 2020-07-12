@@ -8,6 +8,7 @@ class Cleanse extends Component {
         cleansers : [
             {
                 id:1, 
+                type: 1,
                 brand: 'Garnier SkinActive',
                 name: 'Miscellar Water',
                 description: 'Removes makeup + cleanswer + soothes, no rinsing',
@@ -17,6 +18,7 @@ class Cleanse extends Component {
             },
             {
                 id:2,
+                type: 1,
                 brand: 'Nivea',
                 name: 'MiscellAir',
                 description: 'Make-up removed for dry skin, dermatologist tested. Easy to apply, safe for sensitive skin, and leaves no product residue behind.',
@@ -26,6 +28,7 @@ class Cleanse extends Component {
             },
             {
                 id:3,
+                type: 1,
                 brand: 'Cetaphil',
                 name: 'Oily Skin Cleanser',
                 description: 'Foaming action removes excess oil.',
@@ -35,6 +38,7 @@ class Cleanse extends Component {
             },
             {
                 id: 4,
+                type: 1,
                 brand: "The Ordinary.",
                 name: "Squalane Cleanser",
                 description: 'Squalane based face cleanser and makeup remover.',
@@ -46,7 +50,7 @@ class Cleanse extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container key={Math.random}>
             <br/><br/>
                 <Jumbotron>
                     <h1><img src={Sponge} alt="Logo"/> Cleanse</h1>
