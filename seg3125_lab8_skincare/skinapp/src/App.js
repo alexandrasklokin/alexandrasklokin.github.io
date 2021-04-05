@@ -3,6 +3,7 @@ import React,{Component} from 'react';
 
 import TopNavBar from './components/TopNavBar';
 import Welcome from './components/Welcome';
+import Bienvenue from './components/Bienvenue';
 import Cleanse from './components/Cleanse';
 import Treatement from './components/Treatement';
 import Moisturize from './components/Moisturize';
@@ -29,6 +30,7 @@ class App extends Component {
 
             <Switch>
               <Route exact path='/welcome' component={Welcome} />
+              <Route exact path='/bienvenue' component={Bienvenue} />
               <Route exact path='/cleanse' component={Cleanse} />
               <Route exact path='/treatment' component={Treatement} />
               <Route exact path='/moisturize' component={Moisturize} />

@@ -27,6 +27,8 @@ class TopNavBar extends Component {
               <div className="navlink"><NavLink to='/quiz' className="link">Quiz</NavLink></div>
               <div className="navlink">||</div>
               <div className="navlink"><NavLink to='/results' className="link">Results</NavLink></div>
+              <div className="navlink">||</div>
+              <div className="navlink"><NavLink to='bienvenue' className="link">Français</NavLink></div>
             </Nav>
           </Navbar>
           

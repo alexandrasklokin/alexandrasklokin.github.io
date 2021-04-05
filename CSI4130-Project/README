@@ -1,0 +1,47 @@
+CSI4130 - Computer Graphics Final Project
+
+Alexandra Sklokin 
+300010511
+
+Sneha George
+300006801
+
+_____Instructions________________________________________________________________________
+
+Needs to be run on a server using the command:
+	http-server . -p 8080
+
+_____Sources_____________________________________________________________________________
+
+Spirograph 3D Shape: 
+	https://fractalformulas.wordpress.com/flame-variations/spirograph3d/
+
+Animal Meshes:
+	https://github.com/mrdoob/three.js/blob/master/examples/models/gltf/
+
+Two ViewPorts:
+	https://github.com/mrdoob/three.js/blob/master/examples/webgl_camera.html
+
+Skybox:
+	https://opengameart.org/content/beach-skyboxes
+	https://www.humus.name/index.php?page=Textures&start=88
+
+Perlin Noise:
+	https://gist.github.com/banksean/304522#file-perlin-noise-simplex-js
+	https://github.com/stephanbaker/PerlinTerrain
+
+CubeCamera: 
+	https://threejs.org/docs/#api/en/cameras/CubeCamera
+
+Mirror Teapot: 
+	https://github.com/stemkoski/stemkoski.github.com/blob/master/Three.js/Reflection.html
+	https://threejs.org/examples/#webgl_materials_cubemap
+
+Teapot Mesh:
+	https://github.com/allbecauseyoutoldmeso/flying_teacup
+
+Audio:
+	https://github.com/Gan-Tu/StonehengeJS
+
+Music Library:
+	https://www.bensound.com/royalty-free-music/2
