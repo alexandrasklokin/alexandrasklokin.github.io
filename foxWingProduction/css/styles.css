@@ -202,6 +202,24 @@ ul ol {
   margin-bottom: 0;
 }
 
+/* ______________________________________________________________________________________________________________ SLOGAN STUFF */
+
+#slogan-big {
+  font-size: 90px;
+  color: white;
+  font-family: "Verdana", Helvetica, sans-serif;
+}
+
+#slogan-small {
+  font-size: 60px;
+  color: white;
+  font-family: Helvetica, Helvetica, sans-serif;
+}
+
+
+
+/* ______________________________________________________________________________________________________________ SLOGAN STUFF */
+
 dt {
   font-weight: 700;
 }
@@ -10992,4 +11010,36 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+#hoveringProfile {
+  transition: color 0.25s linear; 
+}
+
+#hoveringProfile:hover {
+  background: rgba(231, 101, 36, 0.9);
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 16rem;
+  height: 16rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4, .team-member .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
 }
