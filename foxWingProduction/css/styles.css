@@ -61,7 +61,8 @@
   --bs-mooli-font: Mooli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-caveat-font: Caveat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-kalam-font: Kalam, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.1rem;
+  --bs-services-font-size: 1.0rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -93,6 +94,7 @@
     scroll-behavior: smooth;
   }
 }
+
 
 body {
   margin: 0;
@@ -211,6 +213,7 @@ ul ol {
   font-size: 90px;
   color: white;
   font-family: var(--bs-mooli-font);
+  font-weight: bold;
 }
 
 #slogan-small {
@@ -7790,7 +7793,7 @@ textarea.form-control-lg {
 
 .py-2 {
   padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
+  padding-bottom: 0.65rem !important;
 }
 
 .py-3 {
@@ -10857,11 +10860,11 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .text-white-75 {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 1.0) !important;
 }
 
 .btn-xl {
@@ -10899,8 +10902,8 @@ hr.divider-light {
   color: #6c757d;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
-  padding: 0.75rem 0;
+  font-size: 1rem;
+  padding: 0.70rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #e76524;
@@ -10950,7 +10953,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(209, 182, 163, 0.8) 0%, rgba(209, 182, 163, 0.8) 90%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(209, 182, 163, 0.8) 0%, rgba(209, 182, 163, 0) 90%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11017,10 +11020,12 @@ header.masthead h1, header.masthead .h1 {
 
 #hoveringProfile {
   transition: color 0.25s linear; 
+  transition: transform .2s;
 }
 
 #hoveringProfile:hover {
   background: rgba(231, 101, 36, 0.9);
+  transform:scale(1.1);
 }
 
 #hoveringIcon {
@@ -11100,5 +11105,9 @@ header.masthead h1, header.masthead .h1 {
   transform: translateX(-50%);
   border-color: #e76524;
   border-style: solid;
-  border-width: 2;
+  border-width: 10px;
+}
+
+#services{
+  font-size: var(--bs-services-font-size);
 }
