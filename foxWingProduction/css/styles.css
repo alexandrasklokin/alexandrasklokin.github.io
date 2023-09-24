@@ -11023,6 +11023,14 @@ header.masthead h1, header.masthead .h1 {
   background: rgba(231, 101, 36, 0.9);
 }
 
+#hoveringIcon {
+  transition: transform .2s;
+}
+
+#hoveringIcon:hover {
+  transform:scale(1.2);
+}
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11085,9 +11093,12 @@ header.masthead h1, header.masthead .h1 {
 }
 .profile .profile-img {
   height: 80vw;
-  max-height: 45rem;
+  max-height: 30rem;
   position: absolute;
-  bottom: 0;
+  bottom: 40;
   left: 50%;
   transform: translateX(-50%);
+  border-color: #e76524;
+  border-style: solid;
+  border-width: 2;
 }
